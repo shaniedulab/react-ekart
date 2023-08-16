@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDom from 'react-dom/client';
+import App from './app.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const root = ReactDom.createRoot(document.getElementById('root'));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(<App></App>)
+
+// const header=<h1>This is my first React App</h1>
+// console.log(header);
+// React.createElement()
+// ReactDom.render(header,document.getElementById('root'));
+
+//in side the function pass the container element id
